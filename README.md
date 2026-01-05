@@ -1,6 +1,10 @@
 <h1 align="center">Awesome Claude Skills</h1>
 
 <p align="center">
+  <strong>语言：</strong>简体中文 | <a href="./README.en.md">English</a>
+</p>
+
+<p align="center">
 <a href="https://platform.composio.dev/?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeSkills">
   <img width="1280" height="640" alt="Composio banner" src="https://github.com/user-attachments/assets/adb3f57a-2706-4329-856f-059a32059d48">
 </a>
@@ -33,155 +37,142 @@
   </p>
 </div>
 
-A curated list of practical Claude Skills for enhancing productivity across Claude.ai, Claude Code, and the Claude API.
+面向中文社区的 Claude Skills 推荐列表，帮助在 Claude.ai、Claude Code 与 Claude API 中提升生产力。
 
+> 想让技能连接 500+ 应用？试试 [Composio](https://platform.composio.dev/?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeSkills)。
 
-> If you want your skills to take actions across 500+ apps, wire them up with [Composio](https://platform.composio.dev/?utm_source=Github&utm_medium=Youtube&utm_campaign=2025-11&utm_content=AwesomeSkills)
+## 目录
 
+- [什么是 Claude Skills？](#什么是-claude-skills)
+- [技能分类](#技能分类)
+  - [文档处理](#文档处理)
+  - [开发与代码工具](#开发与代码工具)
+  - [数据与分析](#数据与分析)
+  - [商业与市场](#商业与市场)
+  - [沟通与写作](#沟通与写作)
+  - [创意与多媒体](#创意与多媒体)
+  - [效率与组织](#效率与组织)
+  - [协作与项目管理](#协作与项目管理)
+  - [安全与系统](#安全与系统)
+- [快速开始](#快速开始)
+- [创建技能](#创建技能)
+- [贡献指南](#贡献指南)
+- [资源](#资源)
+- [许可证](#许可证)
 
-## Contents
+## 什么是 Claude Skills？
 
-- [What Are Claude Skills?](#what-are-claude-skills)
-- [Skills](#skills)
-  - [Document Processing](#document-processing)
-  - [Development & Code Tools](#development--code-tools)
-  - [Data & Analysis](#data--analysis)
-  - [Business & Marketing](#business--marketing)
-  - [Communication & Writing](#communication--writing)
-  - [Creative & Media](#creative--media)
-  - [Productivity & Organization](#productivity--organization)
-  - [Collaboration & Project Management](#collaboration--project-management)
-  - [Security & Systems](#security--systems)
-- [Getting Started](#getting-started)
-- [Creating Skills](#creating-skills)
-- [Contributing](#contributing)
-- [Resources](#resources)
-- [License](#license)
+Claude Skills 是可定制的工作流，教会 Claude 按照你的需求执行特定任务，在各个平台实现标准化和可复用的自动化。
 
-## What Are Claude Skills?
+## 技能分类
 
-Claude Skills are customizable workflows that teach Claude how to perform specific tasks according to your unique requirements. Skills enable Claude to execute tasks in a repeatable, standardized manner across all Claude platforms.
+### 文档处理
 
-## Skills
+- [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - 创建、编辑、审阅 Word 文档，支持修订、批注与格式调整。
+- [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - 提取文本、表格与元数据，支持合并和标注 PDF。
+- [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - 阅读、生成并调整幻灯片布局与模板。
+- [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - 电子表格公式、图表与数据转换。
+- [Markdown to EPUB Converter](https://github.com/smerchek/claude-epub-skill) - 将 Markdown 和聊天摘要转成专业 EPUB 电子书。*By [@smerchek](https://github.com/smerchek)*
 
-### Document Processing
+### 开发与代码工具
 
-- [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - Create, edit, analyze Word docs with tracked changes, comments, formatting.
-- [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Extract text, tables, metadata, merge & annotate PDFs.
-- [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - Read, generate, and adjust slides, layouts, templates.
-- [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - Spreadsheet manipulation: formulas, charts, data transformations.
-- [Markdown to EPUB Converter](https://github.com/smerchek/claude-epub-skill) - Converts markdown documents and chat summaries into professional EPUB ebook files. *By [@smerchek](https://github.com/smerchek)*
+- [artifacts-builder](https://github.com/anthropics/skills/tree/main/web-artifacts-builder) - 使用 React、Tailwind、shadcn/ui 生成复杂的 claude.ai HTML artifact。
+- [aws-skills](https://github.com/zxkane/aws-skills) - AWS 开发技能：CDK 最佳实践、成本优化 MCP 服务器、无服务/事件驱动架构。
+- [Changelog Generator](./changelog-generator/) - 自动将 Git 提交转换成用户友好的更新日志。
+- [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - 为每个 Claude Code 终端窗口显示动态标题，便于区分。
+- [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - 生成 D3 图表和交互式可视化。*By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
+- [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) - 集成 ffuf 进行 Web 模糊测试并分析漏洞。*By [@jthack](https://github.com/jthack)*
+- [finishing-a-development-branch](https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch) - 引导完成开发分支的选项和流程。
+- [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - 与 iOS 模拟器交互，支持测试和调试。*By [@conorluddy](https://github.com/conorluddy)*
+- [MCP Builder](./mcp-builder/) - 指导用 Python 或 TypeScript 创建高质量 MCP 服务器以集成外部 API。
+- [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - 按 Move 2024 检查表分析 Move 语言包的质量。
+- [Playwright Browser Automation](https://github.com/lackeyjb/playwright-skill) - 让模型调用 Playwright 进行 Web 自动化测试。*By [@lackeyjb](https://github.com/lackeyjb)*
+- [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - 总结提示工程技巧与说服策略。
+- [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) - 使用 PICT 生成配对测试用例并优化覆盖率。
+- [Skill Creator](./skill-creator/) - 指导创建具备专长、工作流和工具整合的 Claude 技能。
+- [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - 将任何文档网站在数分钟内转换为 Claude 技能。*By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
+- [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - 覆盖 Clean Architecture、SOLID 等软件设计模式。
+- [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - 通过子代理分派任务并在检查点审查。
+- [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - 在实现前先进行 TDD 开发流程。
+...
+- [Competitive Ads Extractor](./competitive-ads-extractor/) - 提取并分析竞品广告，洞察信息和创意。
+- [Domain Name Brainstormer](./domain-name-brainstormer/) - 生成域名创意并检查 .com/.io/.dev/.ai 可用性。
+- [Internal Comms](./internal-comms/) - 撰写公司内部沟通，包括更新、简报、FAQ 等。
+- [Lead Research Assistant](./lead-research-assistant/) - 结合产品分析目标公司并提供外联策略。
 
-### Development & Code Tools
+### 沟通与写作
 
-- [artifacts-builder](https://github.com/anthropics/skills/tree/main/web-artifacts-builder) - Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
-- [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
-- [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
-- [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
-- [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
-- [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) - Integrates the ffuf web fuzzer so Claude can run fuzzing tasks and analyze results for vulnerabilities. *By [@jthack](https://github.com/jthack)*
-- [finishing-a-development-branch](https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch) - Guides completion of development work by presenting clear options and handling chosen workflow.
-- [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
-- [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
-- [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
-- [Playwright Browser Automation](https://github.com/lackeyjb/playwright-skill) - Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*
-- [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
-- [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) - Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.
-- [Skill Creator](./skill-creator/) - Provides guidance for creating effective Claude Skills that extend capabilities with specialized knowledge, workflows, and tool integrations.
-- [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
-- [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
-- [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
-- [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
-- [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
-- [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [article-extractor](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor) - 提取网页全文和元数据。
+- [brainstorming](https://github.com/obra/superpowers/tree/main/skills/brainstorming) - 通过结构化提问将想法打磨成熟设计。
+- [Content Research Writer](./content-research-writer/) - 进行研究、补充引文、优化开头并逐节反馈。
+- [family-history-research](https://github.com/emaynard/claude-family-history-research-skill) - 协助规划家谱研究项目。
+- [Meeting Insights Analyzer](./meeting-insights-analyzer/) - 分析会议记录中的行为模式与表达比例。
+- [NotebookLM Integration](https://github.com/PleasePrompto/notebooklm-skill) - 在 Claude Code 中直接查询 NotebookLM，基于上传文档作答。*By [@PleasePrompto](https://github.com/PleasePrompto)*
 
-### Data & Analysis
+### 创意与多媒体
 
-- [CSV Data Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) - Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*
-- [postgres](https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres) - Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*
-- [root-cause-tracing](https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing) - Use when errors occur deep in execution and you need to trace back to find the original trigger.
+- [Canvas Design](./canvas-design/) - 依据设计原则生成精美 PNG/PDF 作品。
+- [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - 使用 Gemini 生成 UI 草图、图标和插画。*By [@sanjay3290](https://github.com/sanjay3290)*
+- [Image Enhancer](./image-enhancer/) - 提升图片分辨率、锐度和清晰度，适合演示与文档。
+- [Slack GIF Creator](./slack-gif-creator/) - 为 Slack 优化的 GIF 生成器，支持尺寸校验与组合动画。
+- [Theme Factory](./theme-factory/) - 将专业字体和配色应用到幻灯片、报告与落地页，内置 10 套主题。
+- [Video Downloader](./video-downloader/) - 下载 YouTube 等平台视频，支持多格式和质量选项。
+- [youtube-transcript](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript) - 抓取 YouTube 字幕并总结。
 
-### Business & Marketing
+### 效率与组织
 
-- [Brand Guidelines](./brand-guidelines/) - Applies Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards.
-- [Competitive Ads Extractor](./competitive-ads-extractor/) - Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.
-- [Domain Name Brainstormer](./domain-name-brainstormer/) - Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.
-- [Internal Comms](./internal-comms/) - Helps write internal communications including 3P updates, company newsletters, FAQs, status reports, and project updates using company-specific formats.
-- [Lead Research Assistant](./lead-research-assistant/) - Identifies and qualifies high-quality leads by analyzing your product, searching for target companies, and providing actionable outreach strategies.
+- [File Organizer](./file-organizer/) - 识别上下文、去重并提供更好的文件组织方案。
+- [Invoice Organizer](./invoice-organizer/) - 自动整理发票收据，提取信息并统一命名。
+- [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - 基于持续改进理念的多角度分析。
+- [n8n-skills](https://github.com/haunchen/n8n-skills) - 让 AI 助手直接理解和操作 n8n 工作流。
+- [Raffle Winner Picker](./raffle-winner-picker/) - 使用安全随机性选择抽奖获奖者，支持列表或表格。
+- [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - 帮助基于反馈迭代下一步产品或学习方向。
+- [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - 将相关文档串联成知识网络并总结。
 
-### Communication & Writing
+### 协作与项目管理
 
-- [article-extractor](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor) - Extract full article text and metadata from web pages.
-- [brainstorming](https://github.com/obra/superpowers/tree/main/skills/brainstorming) - Transform rough ideas into fully-formed designs through structured questioning and alternative exploration.
-- [Content Research Writer](./content-research-writer/) - Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.
-- [family-history-research](https://github.com/emaynard/claude-family-history-research-skill) - Provides assistance with planning family history and genealogy research projects.
-- [Meeting Insights Analyzer](./meeting-insights-analyzer/) - Analyzes meeting transcripts to uncover behavioral patterns including conflict avoidance, speaking ratios, filler words, and leadership style.
-- [NotebookLM Integration](https://github.com/PleasePrompto/notebooklm-skill) - Lets Claude Code chat directly with NotebookLM for source-grounded answers based exclusively on uploaded documents. *By [@PleasePrompto](https://github.com/PleasePrompto)*
+- [git-pushing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/git-pushing) - 自动化 Git 操作与仓库交互。
+- [review-implementing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/review-implementing) - 评估实现方案并与规格对齐。
+- [test-fixing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/test-fixing) - 识别失败测试并提出修复。
 
-### Creative & Media
+### 安全与系统
 
-- [Canvas Design](./canvas-design/) - Creates beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, designs, and static pieces.
-- [imagen](https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen) - Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*
-- [Image Enhancer](./image-enhancer/) - Improves image and screenshot quality by enhancing resolution, sharpness, and clarity for professional presentations and documentation.
-- [Slack GIF Creator](./slack-gif-creator/) - Creates animated GIFs optimized for Slack with validators for size constraints and composable animation primitives.
-- [Theme Factory](./theme-factory/) - Applies professional font and color themes to artifacts including slides, docs, reports, and HTML landing pages with 10 pre-set themes.
-- [Video Downloader](./video-downloader/) - Downloads videos from YouTube and other platforms for offline viewing, editing, or archival with support for various formats and quality options.
-- [youtube-transcript](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript) - Fetch transcripts from YouTube videos and prepare summaries.
+- [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - 数字取证分析与调查技巧。
+- [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - 安全删除文件与数据清理。
+- [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - 提取并分析文件元数据。
+- [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - 使用 Sigma 规则狩猎威胁并分析事件。
 
-### Productivity & Organization
+## 快速开始
 
-- [File Organizer](./file-organizer/) - Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organizational structures.
-- [Invoice Organizer](./invoice-organizer/) - Automatically organizes invoices and receipts for tax preparation by reading files, extracting information, and renaming consistently.
-- [kaizen](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen) - Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.
-- [n8n-skills](https://github.com/haunchen/n8n-skills) - Enables AI assistants to directly understand and operate n8n workflows.
-- [Raffle Winner Picker](./raffle-winner-picker/) - Randomly selects winners from lists, spreadsheets, or Google Sheets for giveaways and contests with cryptographically secure randomness.
-- [ship-learn-next](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next) - Skill to help iterate on what to build or learn next, based on feedback loops.
-- [tapestry](https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry) - Interlink and summarize related documents into knowledge networks.
+### 在 Claude.ai 中使用技能
 
-### Collaboration & Project Management
+1. 点击聊天界面的技能图标 (🧩)。
+2. 从市场添加技能或上传自定义技能。
+3. Claude 会根据任务自动激活相关技能。
 
-- [git-pushing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/git-pushing) - Automate git operations and repository interactions.
-- [review-implementing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/review-implementing) - Evaluate code implementation plans and align with specs.
-- [test-fixing](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/test-fixing) - Detect failing tests and propose patches or fixes.
+### 在 Claude Code 中使用技能
 
-### Security & Systems
-
-- [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics) - Digital forensics analysis and investigation techniques.
-- [file-deletion](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion) - Secure file deletion and data sanitization methods.
-- [metadata-extraction](https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction) - Extract and analyze file metadata for forensic purposes.
-- [threat-hunting-with-sigma-rules](https://github.com/jthack/threat-hunting-with-sigma-rules-skill) - Use Sigma detection rules to hunt for threats and analyze security events.
-
-## Getting Started
-
-### Using Skills in Claude.ai
-
-1. Click the skill icon (🧩) in your chat interface.
-2. Add skills from the marketplace or upload custom skills.
-3. Claude automatically activates relevant skills based on your task.
-
-### Using Skills in Claude Code
-
-1. Place the skill in `~/.config/claude-code/skills/`:
+1. 将技能放入 `~/.config/claude-code/skills/`：
    ```bash
    mkdir -p ~/.config/claude-code/skills/
    cp -r skill-name ~/.config/claude-code/skills/
    ```
 
-2. Verify skill metadata:
+2. 验证技能元数据：
    ```bash
    head ~/.config/claude-code/skills/skill-name/SKILL.md
    ```
 
-3. Start Claude Code:
+3. 启动 Claude Code：
    ```bash
    claude
    ```
 
-4. The skill loads automatically and activates when relevant.
+4. 启动后技能会自动加载并在需要时激活。
 
-### Using Skills via API
+### 通过 API 使用技能
 
-Use the Claude Skills API to programmatically load and manage skills:
+使用 Claude Skills API 以编程方式加载和管理技能：
 
 ```python
 import anthropic
@@ -195,111 +186,108 @@ response = client.messages.create(
 )
 ```
 
-See the [Skills API documentation](https://docs.claude.com/en/api/skills-guide) for details.
+详细说明见 [Skills API 文档](https://docs.claude.com/en/api/skills-guide)。
 
-## Creating Skills
+## 创建技能
 
-### Skill Structure
+### 技能结构
 
-Each skill is a folder containing a `SKILL.md` file with YAML frontmatter:
+每个技能是包含 `SKILL.md` 的文件夹，使用 YAML 前置区块：
 
 ```
 skill-name/
-├── SKILL.md          # Required: Skill instructions and metadata
-├── scripts/          # Optional: Helper scripts
-├── templates/        # Optional: Document templates
-└── resources/        # Optional: Reference files
+├── SKILL.md          # 必需：技能说明与元数据
+├── scripts/          # 可选：辅助脚本
+├── templates/        # 可选：文档模板
+└── resources/        # 可选：参考资料
 ```
 
-### Basic Skill Template
+### 基础模板
 
 ```markdown
 ---
 name: my-skill-name
-description: A clear description of what this skill does and when to use it.
+description: 简明描述技能作用与使用场景。
 ---
 
 # My Skill Name
 
-Detailed description of the skill's purpose and capabilities.
+技能目的与能力的详细描述。
 
-## When to Use This Skill
+## 何时使用
 
-- Use case 1
-- Use case 2
-- Use case 3
+- 用例 1
+- 用例 2
+- 用例 3
 
-## Instructions
+## 操作指南
 
-[Detailed instructions for Claude on how to execute this skill]
+[指导 Claude 执行此技能的详细步骤]
 
-## Examples
+## 示例
 
-[Real-world examples showing the skill in action]
+[展示技能的真实使用示例]
 ```
 
-### Skill Best Practices
+### 最佳实践
 
-- Focus on specific, repeatable tasks
-- Include clear examples and edge cases
-- Write instructions for Claude, not end users
-- Test across Claude.ai, Claude Code, and API
-- Document prerequisites and dependencies
-- Include error handling guidance
+- 聚焦具体、可重复的任务
+- 包含清晰的示例与边界情况
+- 以「写给 Claude」的方式编写说明
+- 在 Claude.ai、Claude Code 与 API 全部测试
+- 记录前置条件与依赖
+- 提供错误处理指引
 
-## Contributing
+## 贡献指南
 
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+欢迎贡献！请阅读 [贡献指南](CONTRIBUTING.md)，内容包括：
 
-- How to submit new skills
-- Skill quality standards
-- Pull request process
-- Code of conduct
+- 如何提交新技能
+- 技能质量标准
+- Pull Request 流程
+- 行为准则
 
-### Quick Contribution Steps
+### 快速贡献步骤
 
-1. Ensure your skill is based on a real use case
-2. Check for duplicates in existing skills
-3. Follow the skill structure template
-4. Test your skill across platforms
-5. Submit a pull request with clear documentation
+1. 确保技能来源于真实场景
+2. 检查现有技能是否重复
+3. 遵循技能结构模板
+4. 在各平台测试技能
+5. 提交包含清晰文档的 Pull Request
 
-## Resources
+## 资源
 
-### Official Documentation
+### 官方文档
 
-- [Claude Skills Overview](https://www.anthropic.com/news/skills) - Official announcement and features
-- [Skills User Guide](https://support.claude.com/en/articles/12512180-using-skills-in-claude) - How to use skills in Claude
-- [Creating Custom Skills](https://support.claude.com/en/articles/12512198-creating-custom-skills) - Skill development guide
-- [Skills API Documentation](https://docs.claude.com/en/api/skills-guide) - API integration guide
-- [Agent Skills Blog Post](https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) - Engineering deep dive
+- [Claude Skills 概览](https://www.anthropic.com/news/skills) - 官方发布与特性
+- [Skills 使用指南](https://support.claude.com/en/articles/12512180-using-skills-in-claude) - 如何在 Claude 中使用技能
+- [创建自定义技能](https://support.claude.com/en/articles/12512198-creating-custom-skills) - 开发指南
+- [Skills API 文档](https://docs.claude.com/en/api/skills-guide) - API 集成
+- [Agent Skills 博文](https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) - 工程实践解析
 
-### Community Resources
+### 社区资源
 
-- [Anthropic Skills Repository](https://github.com/anthropics/skills) - Official example skills
-- [Claude Community](https://community.anthropic.com) - Discuss skills with other users
-- [Skills Marketplace](https://claude.ai/marketplace) - Discover and share skills
+- [Anthropic Skills 仓库](https://github.com/anthropics/skills) - 官方示例技能
+- [Claude 社区](https://community.anthropic.com) - 讨论与分享
+- [Skills Marketplace](https://claude.ai/marketplace) - 发现与共享技能
 
-### Inspiration & Use Cases
+### 灵感与场景
 
-- [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - 50 ways people use Claude Code
-- [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion integration skills
+- [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - 50 种 Claude Code 用法
+- [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion 集成技能
 
+## 加入社区
 
-## Join the Community
+- 想将 Composio 接入你的认证体系？[预约沟通](https://calendly.com/thomas-composio/composio-enterprise-setup)
+- [关注 Twitter](https://x.com/composio)
+- [加入 Discord](https://discord.com/invite/composio)
 
-- Have questions about integrating Composio with your auth setup? [Hop on a quick call with us](https://calendly.com/thomas-composio/composio-enterprise-setup)
-- [Follow us on Twitter](https://x.com/composio)
-- [Join our Discord](https://discord.com/invite/composio)
+## 许可证
 
-## License
-
-This repository is licensed under the Apache License 2.0.
-
-Individual skills may have different licenses - please check each skill's folder for specific licensing information.
+本仓库采用 Apache License 2.0。单个技能可能使用不同许可证，请查阅对应文件夹。
 
 ---
 
-**Note**: Claude Skills work across Claude.ai, Claude Code, and the Claude API. Once you create a skill, it's portable across all platforms, making your workflows consistent everywhere you use Claude.
+**说明**：Claude Skills 可在 Claude.ai、Claude Code 和 Claude API 间通用，让你的工作流在各平台保持一致。
 
-- [AgentsKB](https://agentskb.com) - Upgrade your AI with researched answers. We did the research so your AI gets it right the first time.
+- [AgentsKB](https://agentskb.com) - 以经过调研的答案升级你的 AI。
